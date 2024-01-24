@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import './App.css'
+import Navbar from './components/Navbar'
+import Intro from './components/Intro'
+import Popular from './components/Popular'
+import Newest from './components/Newest'
+import TopRated from './components/TopRated'
+import axios from 'axios'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const getMovies = async () => {
+		const movies = await axios.get('https://movie-app-b3e28-default-rtdb.firebaseio.com/movies.json')
+
+		const showMovies = Object.values(movies.data)
+		console.log(showMovies)
+	}
+
+	useEffect(() => {
+		getMovies()
+	}, [])
+	return (
+		<div>
+			<Navbar />
+			<Intro />
+			<Popular />
+			<Newest />
+			<TopRated />
+		</div>
+	)
 }
 
-export default App;
+export default App
