@@ -14,10 +14,13 @@ const Newest = () => {
 	if (isLoading) return <h2>Loading...</h2>
 
 	return (
-		<div>
-			{data?.map((item: any) => {
-				return <div> {item.title} </div>
-			})}
+		<div className="p-1 m-3">
+			<div>
+				<h1>ALL</h1>
+				{data?.map((item: any) => {
+					return <div className="p-1 m-1"> {item.title} </div>
+				})}
+			</div>
 		</div>
 	)
 }
