@@ -23,8 +23,8 @@ function App() {
 			<Navbar />
 			<Intro />
 			<Popular />
-			<Newest />
 			<TopRated />
+			<Newest />
 		</div>
 	)
 }
