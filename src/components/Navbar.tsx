@@ -7,10 +7,10 @@ const Navbar = () => {
 			<nav className="flex-1">
 				<ul className="flex justify-around  ">
 					<li>HOME</li>
-					<li>FILMY</li>
-					<li>SERIALE</li>
-					<li>LISTA ŻYCZEŃ</li>
-					<li>PROFIL</li>
+					<li>MOVIES</li>
+					<li>SERIES</li>
+					<li>FAVOURTIES</li>
+					<li>PROFIE</li>
 				</ul>
 			</nav>
 		</header>
