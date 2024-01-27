@@ -18,7 +18,11 @@ const Newest = () => {
 			<h1>ALL</h1>
 			<div className="flex flex-wrap">
 				{data?.map((item: any) => {
-					return <div className="p-1 m-1"> {item.title} </div>
+					return (
+						<div className="p-1 m-1 flex-col">
+							{item.title} {item.img}
+						</div>
+					)
 				})}
 			</div>
 		</div>
