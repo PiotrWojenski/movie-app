@@ -1,4 +1,3 @@
-import React from 'react'
 import useFetch from '../hooks/useFetch'
 import useFetchMovies from '../hooks/useFetchMovies'
 import useFetchSeries from '../hooks/useFetchSeries'
