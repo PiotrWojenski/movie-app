@@ -12,7 +12,7 @@ const Navbar = () => {
 					<li>MOVIES</li>
 					<li>SERIES</li>
 					<li>FAVOURTIES</li>
-					<li>PROFIE</li>
+					<li>PROFILE</li>
 				</ul>
 			</nav>
 		</header>
