@@ -9,7 +9,7 @@ const Newest = () => {
 	console.log(movies)
 	console.log(series)
 
-	if (isError) return <h2>Problem z polaczeniem</h2>
+	if (isError) return <h2>Error </h2>
 	if (isLoading) return <h2>Loading...</h2>
 
 	return (
@@ -19,7 +19,8 @@ const Newest = () => {
 				{data?.map((item: any) => {
 					return (
 						<div className="p-1 m-1 flex-col">
-							{item.title} {item.img}
+							<h3>{item.title}</h3>
+							<img src={item.img} alt={item.title} className="movies-img" />
 						</div>
 					)
 				})}
