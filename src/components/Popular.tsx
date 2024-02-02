@@ -6,7 +6,7 @@ const Popular = () => {
 			className="p-1 m-3 
 	">
 			<h1>Popular</h1>
-			<div className="p-1 m-3">Zdjęcie filmu</div>
+			<div className="p-1 m-3">Popular movies</div>
 		</div>
 	)
 }
