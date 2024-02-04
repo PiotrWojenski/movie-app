@@ -19,9 +19,9 @@ const Newest = () => {
 				{data?.map((item: any) => {
 					return (
 						<div className="flex flex-col bg-white rounded-lg overflow-hidden shadow-lg">
-							<img src={item.img} alt={item.title} className=" h-52 object-cover" />
+							<img src={item.img} alt={item.title} className=" h-52 object-fill" />
 							<div className="p-4">
-								<h3 className="text-lg font-semibold truncate">{item.title}</h3>
+								<h3 className="text-lg font-semibold ">{item.title}</h3>
 							</div>
 						</div>
 					)
