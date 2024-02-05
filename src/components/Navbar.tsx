@@ -1,4 +1,5 @@
 import img from '../logo.svg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 	return (
@@ -7,11 +8,9 @@ const Navbar = () => {
 				<img src={img} alt="logo" className="h-8" />
 				<nav>
 					<ul className="flex space-x-4">
-						<li className="hover:text-gray-300">HOME</li>
-						<li className="hover:text-gray-300">MOVIES</li>
-						<li className="hover:text-gray-300">SERIES</li>
-						<li className="hover:text-gray-300">FAVOURITES</li>
-						<li className="hover:text-gray-300">PROFILE</li>
+						<Link to="/">Home</Link>
+						<Link to="/movies">Movies</Link>
+						<Link to="/series">Series</Link>
 					</ul>
 				</nav>
 			</div>

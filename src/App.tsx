@@ -1,31 +1,23 @@
-import React, { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Intro from './components/Intro'
-import Popular from './components/Popular'
-import Newest from './components/Newest'
-import TopRated from './components/TopRated'
-import axios from 'axios'
+import Home from './pages/Home'
+import Movies from './pages/Movies'
+import Series from './pages/Series'
+import MoviePage from './pages/MoviePage'
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
-	const getMovies = async () => {
-		const movies = await axios.get('https://movie-app-b3e28-default-rtdb.firebaseio.com/movies.json')
-
-		const showMovies = Object.values(movies.data)
-		console.log(showMovies)
-	}
-
-	useEffect(() => {
-		getMovies()
-	}, [])
 	return (
-		<div>
+		<Router>
 			<Navbar />
-			<Intro />
-			<Popular />
-			<TopRated />
-			<Newest />
-		</div>
+			<Routes>
+				<Route path="/" element={<Home />} />
+
+				<Route path="/movies" element={<Movies />} />
+				<Route path="/series" element={<Series />} />
+				<Route path="/movie" element={<MoviePage />} />
+			</Routes>
+		</Router>
 	)
 }
 

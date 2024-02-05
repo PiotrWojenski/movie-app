@@ -10,8 +10,9 @@ const useFetch = () => {
 		return showMovies
 	}
 	const { data, isError, isLoading } = useQuery('moviesData', getMovies)
-
-	return { data, isError, isLoading }
+	const newMovies = data?.filter((item: any) => item.isNew === true)
+	const moviesPopular = data?.filter((item: any) => item.isPopular === true)
+	return { data, isError, isLoading, newMovies, moviesPopular }
 }
 
 export default useFetch
