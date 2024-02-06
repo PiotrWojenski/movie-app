@@ -13,7 +13,7 @@ const MovieItem: React.FC<MovieItemProps> = ({ item }) => {
 				<img src={item.img} alt={item.title} className=" h-52 object-fill" />{' '}
 			</Link>
 			<div className="p-4">
-				<h3 className="text-lg font-semibold ">{item.title}</h3>
+				<h3 className="text-lg font-bold ">{item.title}</h3>
 			</div>
 		</div>
 	)
