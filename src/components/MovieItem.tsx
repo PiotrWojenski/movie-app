@@ -8,11 +8,11 @@ type MovieItemProps = {
 
 const MovieItem: React.FC<MovieItemProps> = ({ item }) => {
 	return (
-		<div className="flex flex-col bg-white rounded-lg overflow-hidden shadow-lg">
+		<div className="flex flex-col  bg-orange-200 rounded-lg overflow-hidden shadow-lg">
 			<Link to={`/movie?title=${item.title}`}>
-				<img src={item.img} alt={item.title} className=" h-52 object-fill" />{' '}
+				<img src={item.img} alt={item.title} className=" h-auto " />{' '}
 			</Link>
-			<div className="p-4">
+			<div className="p-3">
 				<h3 className="text-lg font-bold ">{item.title}</h3>
 			</div>
 		</div>
