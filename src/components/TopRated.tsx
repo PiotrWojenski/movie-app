@@ -9,7 +9,7 @@ const TopRated = () => {
 	if (isError) return <div>Error</div>
 
 	// Sortowanie filmów według oceny i wzięcie pierwszych 10
-	const topRatedMovies = movies?.sort((a, b) => b.rating - a.rating).slice(0, 10)
+	const topRatedMovies = (movies as { id: number; rating: number }[])?.sort((a, b) => b.rating - a.rating).slice(0, 10)
 
 	return (
 		<div className="p-4 m-4">
