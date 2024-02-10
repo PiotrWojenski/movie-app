@@ -3,3 +3,8 @@ body {
 	background: -webkit-linear-gradient(to right, #6e48aa, #9d50bb);
 	background: linear-gradient(to right, #6e48aa, #9d50bb);
 }
+
+.logo-img {
+	width: 2rem;
+	height: 2rem;
+}
