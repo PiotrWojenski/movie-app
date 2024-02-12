@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 
 const Navbar = () => {
@@ -11,7 +10,12 @@ const Navbar = () => {
 						ratingAppski
 					</span>
 				</div>
-				<div className="hidden md:block">Search</div>
+				<TextField
+					id="filled-multiline-flexible"
+					label="Search..."
+					variant="filled"
+					className="bg-slate-100 rounded-lg no-underline"
+				/>
 				<nav>
 					<ul className="flex space-x-4">
 						<li>
