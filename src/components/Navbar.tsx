@@ -1,19 +1,30 @@
-import img from '../logo.svg'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 	return (
-		<header className="bg-gray-800  text-white p-2 text-3xl  font-bold">
-			<div className="flex justify-between items-center h-9">
-				<span className="flex-1 flex justify-start items-center   ">
-					<img src={img} alt="logo" className="logo-img   " />
-				</span>
-				<div className="flex-1 flex justify-center items-center">Search</div>
+		<header className="bg-gray-800 text-white p-4 text-xl font-bold">
+			<div className="container mx-auto flex justify-between items-center">
+				<div className="flex items-center">
+					<span>ratingAppski</span>
+				</div>
+				<div className="hidden md:block">Search</div>
 				<nav>
-					<ul className="flex flex-2 justify-between items-center ">
-						<Link to="/">Home</Link>
-						<Link to="/movies">Movies</Link>
-						<Link to="/series">Series</Link>
+					<ul className="flex space-x-4">
+						<li>
+							<Link to="/" className="hover:text-gray-300">
+								Home
+							</Link>
+						</li>
+						<li>
+							<Link to="/movies" className="hover:text-gray-300">
+								Movies
+							</Link>
+						</li>
+						<li>
+							<Link to="/series" className="hover:text-gray-300">
+								Series
+							</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>
