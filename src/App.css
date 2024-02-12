@@ -5,6 +5,8 @@ body {
 }
 
 .logo-img {
-	width: 2rem;
-	height: 2rem;
+	fontfamily: "'Protest Riot', sans-serif";
+	font-size: 1.5em;
+	color: #05c55c;
+	opacity: 0.8;
 }
