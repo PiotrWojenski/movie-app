@@ -8,8 +8,8 @@ const Newest = () => {
 	if (isLoading) return <h2>Loading...</h2>
 
 	return (
-		<div className="p-4 m-4">
-			<h1 className="text-2xl font-bold mb-4">NOWOŚCI</h1>
+		<div className="py-8 p-4 m-4">
+			<h1 className="text-2xl font-bold mb-4">Newest</h1>
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 				{newMovies?.map((item: any) => {
 					return <MovieItem key={item.id} item={item} />

@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField'
 
 const Navbar = () => {
 	return (
-		<header className="bg-gray-800 text-white p-4 text-xl font-bold">
+		<header className="bg-gray-800 text-white p-4 text-xl font-bold fixed top-0 left-0 w-full z-50">
 			<div className="container mx-auto flex justify-between items-center">
 				<div className="flex items-center">
 					<span className="logo-img" style={{ fontFamily: "'Protest Riot', sans-serif" }}>
