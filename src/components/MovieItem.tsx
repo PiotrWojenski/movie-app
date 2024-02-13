@@ -1,6 +1,7 @@
 import React from 'react'
 import { movieType } from '../types/myTypes'
 import { Link } from 'react-router-dom'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder' // Importuj ikonę
 
 type MovieItemProps = {
 	item: movieType
@@ -14,6 +15,9 @@ const MovieItem: React.FC<MovieItemProps> = ({ item }) => {
 			</Link>
 			<div className="p-4">
 				<h3 className="text-lg font-bold text-center">{item.title}</h3>
+				<div className="text-center">
+					<FavoriteBorderIcon />
+				</div>
 			</div>
 		</div>
 	)
