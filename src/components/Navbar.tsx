@@ -1,7 +1,32 @@
 import { Link } from 'react-router-dom'
 import TextField from '@mui/material/TextField'
+import SearchIcon from '@mui/icons-material/Search'
+import { SubmitHandler, useForm } from 'react-hook-form'
+import { searchType } from '../types/myTypes'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+		reset,
+	} = useForm<searchType>()
+
+	const navigate = useNavigate()
+
+	const onSubmit: SubmitHandler<searchType> = data => {
+		console.log(data)
+		navigate(`/search?result=${data.result}`)
+		reset()
+	}
+
+	const inputValidator = {
+		result: {
+			required: 'This field is required',
+		},
+	}
+
 	return (
 		<header className=" bg-gray-800 text-white p-4 text-xl font-bold  top-0 left-0 w-full z-50 mb-5">
 			<div className="container mx-auto flex justify-between items-center">
@@ -10,12 +35,19 @@ const Navbar = () => {
 						ratingAppski
 					</span>
 				</div>
-				<TextField
-					id="filled-multiline-flexible"
-					label="Search..."
-					variant="filled"
-					className="bg-slate-100 rounded-lg no-underline"
-				/>
+				<form onSubmit={handleSubmit(onSubmit)}>
+					<TextField
+						{...register('result', inputValidator.result)}
+						id="filled-multiline-flexible"
+						label="Search..."
+						variant="filled"
+						className="bg-slate-100 rounded-lg no-underline"
+					/>
+					<button type="submit">
+						<SearchIcon />
+					</button>
+					{errors.result && <>{errors.result.message}</>}
+				</form>
 				<nav>
 					<ul className="flex space-x-4">
 						<li>

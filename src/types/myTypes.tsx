@@ -9,3 +9,17 @@ export type movieType = {
 	type?: string
 	year?: number
 }
+
+export type searchType = {
+	result: string
+}
+
+export type FavouriteContextType = {
+	favourite: any
+	addFavourite: (movie: movieType) => void
+	removeFavourite: (movie: movieType) => void
+}
+
+export type FavouriteContextProviderType = {
+	children: React.ReactNode
+}
