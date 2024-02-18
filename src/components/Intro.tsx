@@ -5,7 +5,7 @@ const Intro: React.FC = () => {
 	return (
 		<Carousel>
 			<Carousel.Item>
-				<video className="d-block w-100" autoPlay loop muted>
+				<video className="d-block w-100" autoPlay muted>
 					<source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
 				</video>
 				<Carousel.Caption>
@@ -14,7 +14,7 @@ const Intro: React.FC = () => {
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
-				<video className="d-block w-100" autoPlay loop muted>
+				<video className="d-block w-100" autoPlay muted>
 					<source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
 				</video>
 				<Carousel.Caption>
