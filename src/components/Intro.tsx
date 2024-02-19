@@ -6,7 +6,6 @@ const Intro = () => {
 	return (
 		<Carousel>
 			<Carousel.Item>
-				{/* Added "playsInline" and "loop" attributes which can help with video playback on mobile devices and browsers */}
 				<video className="d-block w-100" autoPlay playsInline loop muted>
 					<source src={video1} type="video/mp4" />
 					Your browser does not support the video tag.
@@ -20,7 +19,6 @@ const Intro = () => {
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
-				{/* Ensure the URL is accessible and correct */}
 				<video className="d-block w-100" autoPlay playsInline loop muted>
 					<source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
