@@ -13,7 +13,7 @@ const Searches = () => {
 	return (
 		<div>
 			<h2>
-				Wyszukiwania dla: {urlMovieTitles}({result.length})
+				Searching results for: {urlMovieTitles}({result.length})
 			</h2>
 		</div>
 	)

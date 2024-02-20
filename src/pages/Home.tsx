@@ -1,4 +1,3 @@
-import React from 'react'
 import Intro from '../components/Intro'
 import Newest from '../components/Newest'
 import TopRated from '../components/TopRated'
