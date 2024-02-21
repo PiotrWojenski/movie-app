@@ -4,7 +4,6 @@ import favouriteContext from '../context/favouriteContext'
 const Favourites = () => {
 	const { favourite } = useContext(favouriteContext)
 	console.log(favourite)
-	console.log(favourite)
 	return <div>Favourites</div>
 }
 
