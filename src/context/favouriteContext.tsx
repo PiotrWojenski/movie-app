@@ -22,6 +22,7 @@ export const FavouriteContextProvider = ({ children }: FavouriteContextProviderT
 		console.log('test')
 		console.log(alreadyFavourite)
 		console.log(favourite)
+		console.log(favourite)
 	}
 
 	const removeFavourite = (movie: movieType) => {
