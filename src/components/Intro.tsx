@@ -5,10 +5,10 @@ import video3 from '../assets/Shawshank.mp4'
 
 const Intro = () => {
 	return (
-		<div className="flex justify-center items-center h-screen">
+		<div className="flex justify-center ">
 			{' '}
 			{/* Zmiana tutaj: wyśrodkowanie w pionie i poziomie na całym ekranie */}
-			<Carousel className="w-1/2 h-96">
+			<Carousel className="w-1/2 h-auto ">
 				{' '}
 				{/* Zmiana tutaj: ustalenie szerokości na 1/2 ekranu i wysokości na 96 jednostek */}
 				<Carousel.Item className="h-full">
