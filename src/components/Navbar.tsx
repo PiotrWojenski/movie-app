@@ -32,7 +32,7 @@ const Navbar = () => {
 			<div className="container mx-auto flex justify-between items-center">
 				<div className="flex items-center">
 					<span className="logo-img" style={{ fontFamily: "'Protest Riot', sans-serif" }}>
-						ratingAppski
+						movieApp
 					</span>
 				</div>
 				<form onSubmit={handleSubmit(onSubmit)}>

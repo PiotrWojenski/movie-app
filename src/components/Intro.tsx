@@ -5,18 +5,10 @@ import video3 from '../assets/Shawshank.mp4'
 
 const Intro = () => {
 	return (
-		<div className="flex justify-center ">
-			{' '}
-			{/* Zmiana tutaj: wyśrodkowanie w pionie i poziomie na całym ekranie */}
-			<Carousel className="w-1/2 h-auto ">
-				{' '}
-				{/* Zmiana tutaj: ustalenie szerokości na 1/2 ekranu i wysokości na 96 jednostek */}
-				<Carousel.Item className="h-full">
-					{' '}
-					{/* Zmiana tutaj: ustalenie wysokości na pełną dla elementu karuzeli */}
+		<div className="flex justify-center">
+			<Carousel className="w-1/2 h-1/3">
+				<Carousel.Item className="w-1/2 h-1/3">
 					<video className="d-block w-full h-full" autoPlay playsInline loop muted>
-						{' '}
-						{/* Zmiana tutaj: pełna szerokość i wysokość dla wideo */}
 						<source src={video1} type="video/mp4" />
 					</video>
 					<Carousel.Caption className="text-white">
@@ -26,7 +18,8 @@ const Intro = () => {
 						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item className="h-full">
+
+				<Carousel.Item className="w-1/2 h-1/3">
 					<video className="d-block w-full h-full" autoPlay playsInline loop muted>
 						<source src={video2} type="video/mp4" />
 					</video>
@@ -37,7 +30,8 @@ const Intro = () => {
 						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item className="h-full">
+
+				<Carousel.Item className="w-1/2 h-1/3">
 					<video className="d-block w-full h-full" autoPlay playsInline loop muted>
 						<source src={video3} type="video/mp4" />
 					</video>
