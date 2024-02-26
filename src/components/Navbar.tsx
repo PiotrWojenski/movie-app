@@ -4,6 +4,8 @@ import SearchIcon from '@mui/icons-material/Search'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { searchType } from '../types/myTypes'
 import { useNavigate } from 'react-router-dom'
+import InputAdornment from '@mui/material/InputAdornment'
+import IconButton from '@mui/material/IconButton'
 
 const Navbar = () => {
 	const {
@@ -41,11 +43,18 @@ const Navbar = () => {
 						id="filled-multiline-flexible"
 						label="Search..."
 						variant="filled"
-						className="bg-slate-100 rounded-lg no-underline"
+						className="bg-slate-100 rounded-lg text-black"
+						InputProps={{
+							endAdornment: (
+								<InputAdornment position="end">
+									<IconButton type="submit" className="text-black p-2" aria-label="search">
+										<SearchIcon />
+									</IconButton>
+								</InputAdornment>
+							),
+						}}
 					/>
-					<button type="submit">
-						<SearchIcon />
-					</button>
+
 					{errors.result && <>{errors.result.message}</>}
 				</form>
 				<nav>
