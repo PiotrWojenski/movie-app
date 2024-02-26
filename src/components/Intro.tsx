@@ -11,11 +11,8 @@ const Intro = () => {
 					<video className="d-block w-full h-full" autoPlay playsInline loop muted>
 						<source src={video1} type="video/mp4" />
 					</video>
-					<Carousel.Caption className="text-white">
-						<p>
-							An epic saga of power and betrayal, where noble families vie for the Iron Throne of Westeros, with the
-							impending doom of the White Walkers looming in the background.
-						</p>
+					<Carousel.Caption className="text-white text-3xl">
+						<p>Game of Thrones</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 
@@ -23,11 +20,8 @@ const Intro = () => {
 					<video className="d-block w-full h-full" autoPlay playsInline loop muted>
 						<source src={video2} type="video/mp4" />
 					</video>
-					<Carousel.Caption className="text-white">
-						<p>
-							This is a monumental tale of courage and friendship, where a fellowship of heroes embarks on a quest to
-							destroy the One Ring and defeat the dark lord Sauron.
-						</p>
+					<Carousel.Caption className="text-white text-3xl">
+						<p>Lord of Ring</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 
@@ -35,11 +29,8 @@ const Intro = () => {
 					<video className="d-block w-full h-full" autoPlay playsInline loop muted>
 						<source src={video3} type="video/mp4" />
 					</video>
-					<Carousel.Caption className="text-white">
-						<p>
-							This is an inspiring tale of hope and friendship within a prison, where a wrongfully convicted banker
-							strives for freedom and redemption.
-						</p>
+					<Carousel.Caption className="text-white text-3xl">
+						<p>Shawshank</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
