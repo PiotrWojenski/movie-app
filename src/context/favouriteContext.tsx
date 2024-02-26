@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react'
-import { movieType } from '../types/myTypes'
-import { FavouriteContextType, FavouriteContextProviderType } from '../types/myTypes'
+import { movieType, FavouriteContextType, FavouriteContextProviderType } from '../types/myTypes'
 
 const defaultState = {
 	favourite: [],
