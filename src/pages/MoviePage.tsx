@@ -9,8 +9,6 @@ const MoviePage = () => {
 
 	const movie = data?.find((item: any) => item.title === urlMovieTitle)
 
-	console.log(movie)
-
 	return (
 		<div className="py-6">
 			<h1 className="text-2xl font-bold mb-4">{(movie as { title: string })?.title}</h1>

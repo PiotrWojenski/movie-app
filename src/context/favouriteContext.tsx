@@ -18,9 +18,6 @@ export const FavouriteContextProvider = ({ children }: FavouriteContextProviderT
 		if (alreadyFavourite === undefined) {
 			setFavourite([...favourite, movie])
 		}
-		console.log('test')
-		console.log(alreadyFavourite)
-		console.log(favourite)
 	}
 
 	const removeFavourite = (movie: movieType) => {
