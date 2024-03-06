@@ -29,7 +29,7 @@ const Intro = () => {
 					<video className="d-block w-full h-full" autoPlay playsInline loop muted>
 						<source src={video3} type="video/mp4" />
 					</video>
-					<Carousel.Caption className="text-white text-3xl">
+					<Carousel.Caption className="text-white text-2xl">
 						<p>Shawshank</p>
 					</Carousel.Caption>
 				</Carousel.Item>
