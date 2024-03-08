@@ -65,17 +65,17 @@ const Navbar = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="/movies" className="hover:text-gray-300">
+							<Link to="/movies" className="hover:text-gray-300 no-underline">
 								Movies
 							</Link>
 						</li>
 						<li>
-							<Link to="/series" className="hover:text-gray-300">
+							<Link to="/series" className="hover:text-gray-300 no-underline">
 								Series
 							</Link>
 						</li>
 						<li>
-							<Link to="/favourites" className="hover:text-gray-300">
+							<Link to="/favourites" className="hover:text-gray-300 no-underline">
 								Favourites
 							</Link>
 						</li>
