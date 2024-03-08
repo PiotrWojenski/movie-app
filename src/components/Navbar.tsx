@@ -58,9 +58,9 @@ const Navbar = () => {
 					{errors.result && <>{errors.result.message}</>}
 				</form>
 				<nav>
-					<ul className="flex space-x-4">
-						<li>
-							<Link to="/" className="hover:text-gray-300">
+					<ul className="flex space-x-4 ">
+						<li className="no-underline">
+							<Link to="/" className="hover:text-gray-300 no-underline">
 								Home
 							</Link>
 						</li>
