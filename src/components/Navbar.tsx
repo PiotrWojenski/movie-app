@@ -59,7 +59,7 @@ const Navbar = () => {
 				</form>
 				<nav>
 					<ul className="flex space-x-4 ">
-						<li className="no-underline">
+						<li>
 							<Link to="/" className="hover:text-gray-300 no-underline">
 								Home
 							</Link>
