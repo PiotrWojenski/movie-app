@@ -74,6 +74,11 @@ const Navbar = () => {
 								Series
 							</Link>
 						</li>
+						<li>
+							<Link to="/favourites" className="hover:text-gray-300">
+								Favourites
+							</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>

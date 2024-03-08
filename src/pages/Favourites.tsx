@@ -7,7 +7,7 @@ const FavouritesPage = () => {
 
 	return (
 		<div>
-			<h2>Ulubione</h2>
+			<h2>Favourite</h2>
 			<div className="movies-list">
 				{favourite.map((movie: any) => (
 					<MovieItem key={movie.title} item={movie} />
