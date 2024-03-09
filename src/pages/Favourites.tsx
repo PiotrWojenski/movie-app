@@ -8,7 +8,7 @@ const FavouritesPage = () => {
 	return (
 		<div>
 			<h2>Favourite</h2>
-			<div className="movies-list">
+			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 				{favourite.map((movie: any) => (
 					<MovieItem key={movie.title} item={movie} />
 				))}
