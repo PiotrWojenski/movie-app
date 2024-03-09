@@ -31,9 +31,9 @@ const MovieItem: React.FC<MovieItemProps> = ({ item }) => {
 				<h3 className="text-lg font-bold text-center">{item.title}</h3>
 				<div className="text-center">
 					{isFavourite ? (
-						<FavoriteIcon className="text-red-500" onClick={toggleFavourite} />
+						<FavoriteIcon className="text-red-500 cursor-pointer" onClick={toggleFavourite} />
 					) : (
-						<FavoriteBorderIcon className="hover:text-red-500" onClick={toggleFavourite} />
+						<FavoriteBorderIcon className="hover:text-red-500 cursor-pointer" onClick={toggleFavourite} />
 					)}
 				</div>
 			</div>
