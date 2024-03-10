@@ -31,13 +31,13 @@ const Navbar = () => {
 
 	return (
 		<header className=" bg-gray-800 text-white p-4 text-xl font-bold   w-full z-50 ">
-			<div className="container mx-auto flex justify-between items-center w-full">
-				<div className="flex flex-grow content-start mr-4 ">
+			<div className=" flex justify-between items-center w-full">
+				<div className="flex flex-grow content-start ">
 					<span className="logo-img" style={{ fontFamily: "'Protest Riot', sans-serif" }}>
 						movieApp
 					</span>
 				</div>
-				<div className="flex flex-grow items-center">
+				<div className="flex flex-grow justify-center">
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<TextField
 							{...register('result', inputValidator.result)}
@@ -59,26 +59,28 @@ const Navbar = () => {
 						{errors.result && <>{errors.result.message}</>}
 					</form>
 				</div>
-				<div className="flex  flex-grow  ">
-					<nav>
-						<ul className="flex   ">
+				<div className="flex flex-grow">
+					<nav className="w-full">
+						<ul
+							className="flex justify-center space-x-7
+						 w-full ">
 							<li>
-								<Link to="/" className="hover:text-gray-300 no-underline">
+								<Link to="/" className="hover:text-gray-300 no-underline block text-center">
 									Home
 								</Link>
 							</li>
 							<li>
-								<Link to="/movies" className="hover:text-gray-300 no-underline">
+								<Link to="/movies" className="hover:text-gray-300 no-underline block text-center">
 									Movies
 								</Link>
 							</li>
 							<li>
-								<Link to="/series" className="hover:text-gray-300 no-underline">
+								<Link to="/series" className="hover:text-gray-300 no-underline block text-center">
 									Series
 								</Link>
 							</li>
 							<li>
-								<Link to="/favourites" className="hover:text-gray-300 no-underline">
+								<Link to="/favourites" className="hover:text-gray-300 no-underline block text-center">
 									Favourites
 								</Link>
 							</li>
