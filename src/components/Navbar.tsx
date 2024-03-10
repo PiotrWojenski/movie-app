@@ -32,12 +32,12 @@ const Navbar = () => {
 	return (
 		<header className=" bg-gray-800 text-white p-4 text-xl font-bold   w-full z-50 ">
 			<div className="container mx-auto flex justify-between items-center w-full">
-				<div className="flex content-start mr-4 ">
+				<div className="flex flex-grow content-start mr-4 ">
 					<span className="logo-img" style={{ fontFamily: "'Protest Riot', sans-serif" }}>
 						movieApp
 					</span>
 				</div>
-				<div className="flex  items-center">
+				<div className="flex flex-grow items-center">
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<TextField
 							{...register('result', inputValidator.result)}
@@ -59,9 +59,9 @@ const Navbar = () => {
 						{errors.result && <>{errors.result.message}</>}
 					</form>
 				</div>
-				<div className="flex ">
+				<div className="flex  flex-grow  ">
 					<nav>
-						<ul className="flex space-x-4 ">
+						<ul className="flex   ">
 							<li>
 								<Link to="/" className="hover:text-gray-300 no-underline">
 									Home
