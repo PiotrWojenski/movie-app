@@ -84,6 +84,11 @@ const Navbar = () => {
 									Favourites
 								</Link>
 							</li>
+							<li>
+								<Link to="/search" className="hover:text-gray-300 no-underline block text-center">
+									Searches
+								</Link>
+							</li>
 						</ul>
 					</nav>
 				</div>
