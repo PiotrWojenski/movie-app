@@ -1,10 +1,10 @@
 import { useLocation } from 'react-router-dom'
-import useSearch from '../hooks/useSearch' // Zaimportuj useSearch zamiast useFetch
-import MovieItem from '../components/MovieItem' // Zaimportuj MovieItem, aby użyć dla renderowania każdego wyniku
+import useSearch from '../hooks/useSearch'
+import MovieItem from '../components/MovieItem'
 
 const Searches = () => {
 	const location = useLocation()
-	const query = new URLSearchParams(location.search).get('result') || '' // Zapewnij domyślną wartość
+	const query = new URLSearchParams(location.search).get('result') || ''
 
 	const { filteredData, isError, isLoading } = useSearch(query)
 
