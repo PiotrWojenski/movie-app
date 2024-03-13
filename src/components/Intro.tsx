@@ -6,9 +6,9 @@ import video3 from '../assets/Shawshank.mp4'
 const Intro = () => {
 	return (
 		<div className="flex justify-center mt-5">
-			<Carousel className="w-1/2 h-1/3">
+			<Carousel className="w-1/2 h-1/3" interval={null}>
 				<Carousel.Item className="w-1/2 h-1/3">
-					<video className="d-block w-full h-full" playsInline loop muted>
+					<video className="d-block w-full h-full" playsInline loop muted autoPlay>
 						<source src={video1} type="video/mp4" />
 					</video>
 					<Carousel.Caption className="text-white text-3xl">
@@ -17,7 +17,7 @@ const Intro = () => {
 				</Carousel.Item>
 
 				<Carousel.Item className="w-1/2 h-1/3">
-					<video className="d-block w-full h-full" playsInline loop muted>
+					<video className="d-block w-full h-full" playsInline loop muted autoPlay>
 						<source src={video2} type="video/mp4" />
 					</video>
 					<Carousel.Caption className="text-white text-3xl">
@@ -26,7 +26,7 @@ const Intro = () => {
 				</Carousel.Item>
 
 				<Carousel.Item className="w-1/2 h-1/3">
-					<video className="d-block w-full h-full" playsInline loop muted>
+					<video className="d-block w-full h-full" playsInline loop muted autoPlay>
 						<source src={video3} type="video/mp4" />
 					</video>
 					<Carousel.Caption className="text-white text-2xl">
