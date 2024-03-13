@@ -14,6 +14,14 @@ const Searches = () => {
 			<h2>
 				Wyszukiwania dla: {urlMovieTitles}({result.length})
 			</h2>
+			<div>
+				{result.map((item: any) => (
+					<div key={item.id}>
+						<h3>{item.title}</h3>
+						<img src={item.img} alt={item.title} />
+					</div>
+				))}
+			</div>
 		</div>
 	)
 }
