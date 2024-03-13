@@ -1,25 +1,24 @@
 import { useLocation } from 'react-router-dom'
-import useFetch from '../hooks/useFetch'
+import useSearch from '../hooks/useSearch' // Zaimportuj useSearch zamiast useFetch
+import MovieItem from '../components/MovieItem' // Zaimportuj MovieItem, aby użyć dla renderowania każdego wyniku
 
 const Searches = () => {
 	const location = useLocation()
-	const urlMovieTitles = new URLSearchParams(location.search).get('result')
+	const query = new URLSearchParams(location.search).get('result') || '' // Zapewnij domyślną wartość
 
-	const { data } = useFetch()
+	const { filteredData, isError, isLoading } = useSearch(query)
 
-	const result: any = data?.filter((item: any) => item.title.toLowerCase().includes(urlMovieTitles?.toLowerCase()))
+	if (isError) return <div>Wystąpił błąd podczas ładowania danych.</div>
+	if (isLoading) return <div>Ładowanie...</div>
 
 	return (
 		<div>
 			<h2>
-				Wyszukiwania dla: {urlMovieTitles}({result.length})
+				Wyszukiwania dla: {query} ({filteredData?.length})
 			</h2>
-			<div>
-				{result.map((item: any) => (
-					<div key={item.id}>
-						<h3>{item.title}</h3>
-						<img src={item.img} alt={item.title} />
-					</div>
+			<div className="grid grid-cols-3 gap-4">
+				{filteredData?.map(item => (
+					<MovieItem key={item.title} item={item} />
 				))}
 			</div>
 		</div>
