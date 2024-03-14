@@ -9,7 +9,7 @@ const Searches = () => {
 	const { filteredData, isError, isLoading } = useSearch(query)
 
 	if (isError) return <div>There was an error while loading..</div>
-	if (isLoading) return <div>Ładowanie...</div>
+	if (isLoading) return <div>Loading...</div>
 
 	return (
 		<div>
