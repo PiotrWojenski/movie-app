@@ -22,7 +22,7 @@ const MoviePage = () => {
 						assumenda odio, laborum molestias nihil reiciendis eaque nobis sequi commodi aspernatur eum debitis.
 						Assumenda asperiores in quo, maiores esse quasi.
 					</p>
-					<p className="text-gray-700 mb-4">Rating: {(movie as { rating: string })?.rating}</p>
+					<p className="text-gray-700 mb-4">Rating: {movie?.rating?.toString() || 'Not rated'}</p>
 				</div>
 			</div>
 		</div>

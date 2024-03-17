@@ -24,7 +24,7 @@ const MovieItem: React.FC<MovieItemProps> = ({ item }) => {
 
 	return (
 		<div className="flex flex-col bg-orange-200 rounded-lg overflow-hidden shadow-lg m-4">
-			<Link to={`/movie?title=${item.title}`}>
+			<Link to={`/movie?title=${encodeURIComponent(item.title || '')}`}>
 				<img src={item.img} alt={item.title} className="h-56 w-full object-cover" />
 			</Link>
 			<div className="p-4">

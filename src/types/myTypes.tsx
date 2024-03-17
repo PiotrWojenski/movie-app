@@ -8,6 +8,7 @@ export type movieType = {
 	title?: string
 	type?: string
 	year?: number
+	id?: string
 }
 
 export type searchType = {
