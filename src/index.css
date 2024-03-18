@@ -19,3 +19,12 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.movie-item {
+	transition: transform 0.3s ease-in-out;
+}
+
+.movie-item:hover {
+	transform: scale(1.05);
+	z-index: 10;
+}
