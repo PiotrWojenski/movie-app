@@ -32,7 +32,7 @@ const Newest: React.FC = () => {
 		infinite: true,
 		speed: 500,
 		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToScroll: 1,
 		nextArrow: <CustomArrow isNext={true} />,
 		prevArrow: <CustomArrow isNext={false} />,
 		responsive: [
