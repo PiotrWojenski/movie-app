@@ -30,7 +30,7 @@ const Intro = () => {
 						<source src={video3} type="video/mp4" />
 					</video>
 					<Carousel.Caption className="text-white text-2xl">
-						<p>Shawshank</p>
+						<p>Shawwwshank</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
