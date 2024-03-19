@@ -5,7 +5,7 @@ import video3 from '../assets/Shawshank.mp4'
 
 const Intro = () => {
 	return (
-		<div className="flex justify-center mt-5">
+		<div className="flex justify-center mt-4">
 			<Carousel className="w-1/2 h-1/3" interval={null}>
 				<Carousel.Item className="w-1/2 h-1/3">
 					<video className="d-block w-full h-full" playsInline loop muted autoPlay>
@@ -30,7 +30,7 @@ const Intro = () => {
 						<source src={video3} type="video/mp4" />
 					</video>
 					<Carousel.Caption className="text-white text-2xl">
-						<p>Shawwwshank</p>
+						<p>Shawshank</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
