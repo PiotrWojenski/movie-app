@@ -30,12 +30,10 @@ const Navbar = () => {
 	}
 
 	return (
-		<header className=" bg-gray-800 text-white p-4 text-xl font-bold   w-full z-50 ">
+		<header className="  p-4 text-2xl font-bold   w-full z-50 ">
 			<div className=" flex justify-between items-center w-full">
 				<div className="flex flex-grow content-start ">
-					<span className="logo-img" style={{ fontFamily: "'Protest Riot', sans-serif" }}>
-						movieApp
-					</span>
+					<span className="logo-img">movieApp</span>
 				</div>
 				<div className="flex flex-grow justify-center">
 					<form onSubmit={handleSubmit(onSubmit)}>
