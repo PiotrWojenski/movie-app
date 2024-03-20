@@ -14,7 +14,7 @@ const Intro = () => {
 		speed: 500, // Animation speed
 		slidesToShow: 1, // Show one slide at a time
 		slidesToScroll: 1, // Scroll one slide at a time
-		autoplay: true, // Enable autoplay
+
 		autoplaySpeed: 2000, // Autoplay speed in milliseconds
 		pauseOnHover: true, // Pause autoplay on hover
 	}
