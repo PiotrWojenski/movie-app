@@ -7,16 +7,14 @@ import video2 from '../assets/lord of ring.mp4'
 import video3 from '../assets/Shawshank.mp4'
 
 const Intro = () => {
-	// Settings for the slider
 	const settings = {
-		dots: true, // Enable dot indicators
-		infinite: true, // Infinite looping
-		speed: 500, // Animation speed
-		slidesToShow: 1, // Show one slide at a time
-		slidesToScroll: 1, // Scroll one slide at a time
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 
-		autoplaySpeed: 2000, // Autoplay speed in milliseconds
-		pauseOnHover: true, // Pause autoplay on hover
+		pauseOnHover: true,
 	}
 
 	return (
