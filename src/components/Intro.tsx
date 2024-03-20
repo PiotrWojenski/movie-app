@@ -37,7 +37,7 @@ const Intro = () => {
 				</div>
 
 				<div>
-					<video className="d-block w-full h-full" playsInline loop muted autoPlay>
+					<video className="d-block w-full h-full" playsInline loop muted>
 						<source src={video3} type="video/mp4" />
 					</video>
 					<div className="text-white text-2xl">Shawshank</div>
