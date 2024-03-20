@@ -23,7 +23,7 @@ const Intro = () => {
 		<div className="flex justify-center mt-4">
 			<Slider {...settings} className="w-1/2 h-1/3">
 				<div>
-					<video className="d-block w-full h-full" playsInline loop muted autoPlay>
+					<video className="d-block w-full h-full" playsInline loop muted>
 						<source src={video1} type="video/mp4" />
 					</video>
 					<div className="text-white text-3xl">Game of Thrones</div>
