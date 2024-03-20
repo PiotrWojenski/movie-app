@@ -1,7 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+
 import video1 from '../assets/got.mp4'
 import video2 from '../assets/lord of ring.mp4'
 import video3 from '../assets/Shawshank.mp4'
