@@ -18,9 +18,9 @@ const MoviePage = () => {
 				</div>
 				<div className="w-full md:w-1/2 m-2">
 					<p className="text-gray-800 mb-4">
-						Opis filmu Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sit omnis sunt. Earum est, dolor
-						assumenda odio, laborum molestias nihil reiciendis eaque nobis sequi commodi aspernatur eum debitis.
-						Assumenda asperiores in quo, maiores esse quasi.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sit omnis sunt. Earum est, dolor assumenda
+						odio, laborum molestias nihil reiciendis eaque nobis sequi commodi aspernatur eum debitis. Assumenda
+						asperiores in quo, maiores esse quasi.
 					</p>
 					<p className="text-gray-700 mb-4">Rating: {movie?.rating?.toString() || 'Not rated'}</p>
 				</div>
