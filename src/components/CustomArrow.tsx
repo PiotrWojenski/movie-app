@@ -9,8 +9,8 @@ const CustomArrow: React.FC<{
 	const baseStyle = 'z-10 absolute top-1/2 transform -translate-y-1/2 cursor-pointer'
 	return (
 		<div
-			className={`${className} ${isNext ? 'right-0 mr-2' : 'left-0 ml-2'} ${baseStyle}`}
-			style={{ ...style, display: 'block', background: 'grey' }}
+			className={`${className} ${isNext ? 'right-0 mr-7' : 'left-0 ml-2'} ${baseStyle}`}
+			style={{ ...style, display: 'block', background: 'none' }}
 			onClick={onClick}
 		/>
 	)
